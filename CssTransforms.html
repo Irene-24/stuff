@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Css Transforms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CssTransforms.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img id="o"  src="css-animations-playlist-master\mario-examples\img\cloud.png" alt="">
+    </div>
+    
+    <div class="circle " id="circ">
+         <p>Hover your mouse here</p>    
+    </div>
+
+ <script>
+ 
+ (function () {
+        let move = document.getElementById('o');
+        let btn = document.getElementById('circ');
+        
+
+        btn.onclick =  function (){
+
+            if (move.style.marginLeft === "500px") {
+                move.style.marginLeft = "0";
+
+            } else {
+                move.style.marginLeft = "500px";
+            }
+        };
+
+   
+    })();
+
+ </script>
+
+</body>
+
+</html>

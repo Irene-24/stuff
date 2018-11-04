@@ -1,0 +1,56 @@
+body
+{
+    background: cadetblue;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+.wrapper
+{
+    width:100%;
+    padding: 20px;  
+}
+
+img#o
+{
+    /* transform: translateX(-5vw); */
+     /* transform: translate(25vw,26vh); /* x and y transforms*/
+   /*  transform: scale(3,1.4);
+    transform: rotateX(30deg)
+      
+   */
+   /* to combine transforms */
+   transform: rotate(30deg) translate(25vw,26vh) scale(3,1.4);
+   margin-left:500px;
+   transition: margin-left 1s ;
+
+
+}
+
+
+.circle
+{
+    width:100px;
+    padding: 50px 0;
+    background: violet;
+    margin: 60px auto;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index:99;
+    /* transition: background 1s, transform 0.5s ; */
+}
+
+/* .circle:hover
+{
+    background: rgb(132, 17, 167);
+    transform: rotate(230deg);
+} */
+
+.clicked
+{
+     margin-left:0;
+
+}
+
